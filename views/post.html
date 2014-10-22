@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1><%= post.title %></h1>
+<p>create at: <%= post.create_at %></p>
+<% if (post.is_updated) { %>
+<p>update at: <%= post.update_at %></p>
+<% } %>
+<p><%= post.content %></p>
+</body>
+</html>

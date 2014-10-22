@@ -1,6 +1,7 @@
 # 一个没有前端的极简博客系统
 
 [![Build Status](https://travis-ci.org/Ralph-Wang/ex-blog.svg)](https://travis-ci.org/Ralph-Wang/ex-blog)
+[![Coverage Status](https://coveralls.io/repos/Ralph-Wang/ex-blog/badge.png)](https://coveralls.io/r/Ralph-Wang/ex-blog)
 
 作为自己 `node-lesson` 的结业项目
 

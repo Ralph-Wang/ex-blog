@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/Ralph-Wang/ex-blog.svg)](https://travis-ci.org/Ralph-Wang/ex-blog)
 [![Coverage Status](https://coveralls.io/repos/Ralph-Wang/ex-blog/badge.png)](https://coveralls.io/r/Ralph-Wang/ex-blog)
 
-作为自己 `node-lesson` 的结业项目
+作为自己 [node-lesson](https://github.com/alsotang/node-lessons) 的结业项目
 
 所以, ex 取 exercise 之意. 不是什么前任/超级的意思.
 

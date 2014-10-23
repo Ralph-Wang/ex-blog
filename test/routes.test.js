@@ -13,7 +13,7 @@ describe('test/routes.test.js # index', function () {
       res.text.should.be.containEql('<input');
       res.text.should.be.containEql('</textarea>');
       res.text.should.be.containEql('</form>');
-      done();
+      done(err);
     });
   });
 
@@ -26,7 +26,7 @@ describe('test/routes.test.js # index', function () {
       res.status.should.be.equal(200);
       res.text.should.containEql(title);
       res.text.should.containEql(content);
-      done();
+      done(err);
     });
   });
 

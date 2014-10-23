@@ -12,14 +12,14 @@ describe('test/proxy/post.test.js # post proxy', function () {
       post.title.should.be.equal(global_title);
       post.content.should.be.equal(global_content);
       post.is_updated.should.be.false;
-      done();
+      done(err);
     });
   });
   it('getPosts should return post in callback', function (done) {
     Post.getPosts(1, function(err, posts) {
       posts.should.be.Array;
       posts.length.should.be.equal(1);
-      done();
+      done(err);
     });
   });
   it('getPostById should return post in callback', function (done) {
@@ -27,7 +27,7 @@ describe('test/proxy/post.test.js # post proxy', function () {
       String(post._id).should.be.equal(global_id);
       post.title.should.be.equal(global_title);
       post.content.should.be.equal(global_content);
-      done();
+      done(err);
     });
   });
 });

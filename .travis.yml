@@ -4,3 +4,5 @@ node_js:
 
 script:
     make test
+
+after_success:  cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js

@@ -1,8 +1,8 @@
 # 一个没有前端的极简博客系统
 
-[![Build Status](build-img)](https://travis-ci.org/Ralph-Wang/ex-blog)
-[![Coverage Status](coveralls-img)](https://coveralls.io/r/Ralph-Wang/ex-blog)
-[![Dependency Status](dependency-img)](https://david-dm.org/Ralph-Wang/ex-blog)
+[![Build Status][build-img]](https://travis-ci.org/Ralph-Wang/ex-blog)
+[![Coverage Status][coveralls-img]](https://coveralls.io/r/Ralph-Wang/ex-blog)
+[![Dependency Status][dependency-img]](https://david-dm.org/Ralph-Wang/ex-blog)
 
 [build-img]: http://img.shields.io/travis/Ralph-Wang/ex-blog.svg?style=flat-square
 [coveralls-img]: http://img.shields.io/coveralls/Ralph-Wang/ex-blog/master.svg?style=flat-square

@@ -28,5 +28,9 @@ router.get('/post/:id', function (req, res) {
 });
 
 
+// support for err
+router.get('/err', function (req, res) {
+  throw new Error();
+});
 
 module.exports = router;

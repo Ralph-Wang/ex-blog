@@ -1,7 +1,10 @@
 # 一个没有前端的极简博客系统
 
-[![Build Status](https://travis-ci.org/Ralph-Wang/ex-blog.svg)](https://travis-ci.org/Ralph-Wang/ex-blog)
-[![Coverage Status](https://coveralls.io/repos/Ralph-Wang/ex-blog/badge.png)](https://coveralls.io/r/Ralph-Wang/ex-blog)
+[![Build Status](build-img)](https://travis-ci.org/Ralph-Wang/ex-blog)
+[![Coverage Status](coveralls-img)](https://coveralls.io/r/Ralph-Wang/ex-blog)
+
+[build-img]: http://img.shields.io/travis/Ralph-Wang/ex-blog.svg?style=flat-square
+[coveralls-img]: http://img.shields.io/coveralls/Ralph-Wang/ex-blog/master.svg?style=flat-square
 
 作为自己 [node-lesson](https://github.com/alsotang/node-lessons) 的结业项目
 

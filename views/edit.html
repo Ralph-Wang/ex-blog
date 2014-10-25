@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<form action="/post/<%= type %>" method="post">
+  <% var title, content %>
+  <% if (type === 'new') { %>
+  <% title = "" %>
+  <% content = "" %>
+  <% } else { %>
+  <% title  = post.title %>
+  <% content  = post.content %>
+  <% } %>
+    <div>
+        <label for="title">title:</label>
+    </div>
+    <div>
+      <input type="text" id="title" name="title" value="<%= title %>"/>
+    </div>
+    <div>
+        <label for="content">content:</label>
+    </div>
+    <div>
+        <textarea id="content" name="content" cols="30" rows="10"><%= content %></textarea>
+    </div>
+    <input type="submit" id="submit" value="submit" />
+</form>
+</body>
+</html>

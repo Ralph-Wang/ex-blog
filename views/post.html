@@ -6,10 +6,11 @@
 </head>
 <body>
 <h1><%= post.title %></h1>
+<a href="/post/edit/<%= post._id %>">Edit</a>
 <p>create at: <%= post.create_at %></p>
 <% if (post.is_updated) { %>
 <p>update at: <%= post.update_at %></p>
 <% } %>
-<p><%= post.content %></p>
+<p><%- post.content %></p>
 </body>
 </html>

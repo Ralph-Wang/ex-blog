@@ -33,8 +33,6 @@ exports.getPostById = function (id, callback) {
  */
 exports.create = function (title, content, callback) {
   var post = new Post();
-  console.log(title);
-  console.log(content);
   post.title = title;
   post.content = content;
   post.save(callback);

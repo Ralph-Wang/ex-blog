@@ -14,6 +14,7 @@
     "ejs-mate": "^2.0.0",
     "eventproxy": "^0.3.1",
     "express": "^4.9.8",
+    "markdown": "^0.5.0",
     "mongoose": "^3.8.17"
   },
   "devDependencies": {

@@ -42,7 +42,7 @@ exports.show = function (req, res) {
  */
 exports.showEdit = function (req, res) {
   var ep = EventProxy.create('post', function (post) {
-    res.render('edit', { type : 'edit/:id',
+    res.render('edit', { type : 'edit/' + post._id,
       post : post});
   });
 
@@ -55,5 +55,14 @@ exports.showEdit = function (req, res) {
  * 保存编辑
  */
 exports.edit = function (req, res) {
-  res.send('yet');
+  var ep = EventProxy.create('post', function (post) {
+    res.render('post', {post: post});
+  });
+  Post.getPostById(req.params.id, function (err, post) {
+    post.title = req.body.title;
+    post.content = req.body.content;
+    post.save(function (err, post) {
+      ep.emit('post', post);
+    });
+  });
 };

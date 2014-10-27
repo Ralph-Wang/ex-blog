@@ -17,7 +17,6 @@ app.engine('html', require('ejs-mate'));
 app.use(bodyParser.urlencoded({extended : false}));
 
 
-
 app.use('/', routes);
 
 app.use(errHandler.notFound);

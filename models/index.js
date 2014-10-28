@@ -1,7 +1,8 @@
 var mongoose = require('mongoose');
+var config = require('../config');
 
 
-mongoose.connect('mongodb://localhost/test', function (err) {
+mongoose.connect(config.db, function (err) {
   if (err) {
     console.log('oops, mongodb connect err: ' + err. message);
   }

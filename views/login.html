@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<% if (!!err) { %>
+<p><%= err %></p>
+<% } %>
+    <form method="post" action="/login">
+        <input type="text" id="user" name="user" />
+        <input type="password" id="pwd" name="pwd" />
+        <input type="submit" value="ok" />
+    </form>
+</body>
+</html>

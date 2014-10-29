@@ -39,6 +39,15 @@ describe('test/controllers/post.test.js', function () {
     });
   });
 
+  it('GET /post/new should redirect /login', function (done) {
+    request(app).get('/post/new')
+    .end(function (err, res) {
+      res.status.should.be.equal(302);
+      res.headers.location.should.be.equal('/login');
+      done();
+    });
+  });
+
   it('POST /post/new should return with post', function (done) {
     var title = 'title' + Date.now();
     var content = 'content' + Date.now();
